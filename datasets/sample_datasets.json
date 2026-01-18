@@ -1,0 +1,155 @@
+{
+  "summarization": {
+    "name": "News Article Summarization",
+    "description": "Dataset for testing summarization capabilities",
+    "task_type": "summarization",
+    "data": [
+      {
+        "text": "The global technology sector saw unprecedented growth in 2024, with artificial intelligence leading the charge. Major tech companies reported record revenues, driven primarily by AI-related products and services. Cloud computing continued its upward trajectory, while semiconductor manufacturers struggled to meet the soaring demand for AI chips. Analysts predict this trend will continue into 2025, with AI becoming increasingly integrated into everyday consumer products and enterprise solutions.",
+        "reference": "The tech sector experienced significant growth in 2024, led by AI advancements. Major companies saw record revenues from AI products, while cloud computing grew and chip makers faced high demand. This trend is expected to continue in 2025.",
+        "prompt": "Summarize the following text in 2-3 sentences:\n\nThe global technology sector saw unprecedented growth in 2024, with artificial intelligence leading the charge. Major tech companies reported record revenues, driven primarily by AI-related products and services. Cloud computing continued its upward trajectory, while semiconductor manufacturers struggled to meet the soaring demand for AI chips. Analysts predict this trend will continue into 2025, with AI becoming increasingly integrated into everyday consumer products and enterprise solutions."
+      },
+      {
+        "text": "Climate scientists released a comprehensive report today warning that global temperatures could rise by an additional 1.5 degrees Celsius by 2040 if current emission trends continue. The report, compiled by researchers from 50 countries, emphasizes the urgent need for immediate action on carbon reduction. Key recommendations include accelerating the transition to renewable energy, implementing stricter emissions regulations, and investing in carbon capture technologies. The findings have prompted renewed calls from environmental groups for world leaders to strengthen their climate commitments.",
+        "reference": "A new climate report warns global temperatures may rise 1.5°C by 2040 without emission reductions. Researchers from 50 countries recommend faster renewable energy adoption, stricter regulations, and carbon capture investment. Environmental groups are calling for stronger climate commitments.",
+        "prompt": "Summarize the following text in 2-3 sentences:\n\nClimate scientists released a comprehensive report today warning that global temperatures could rise by an additional 1.5 degrees Celsius by 2040 if current emission trends continue. The report, compiled by researchers from 50 countries, emphasizes the urgent need for immediate action on carbon reduction. Key recommendations include accelerating the transition to renewable energy, implementing stricter emissions regulations, and investing in carbon capture technologies. The findings have prompted renewed calls from environmental groups for world leaders to strengthen their climate commitments."
+      },
+      {
+        "text": "A breakthrough in quantum computing was announced yesterday by a team of researchers at MIT. The new quantum processor, dubbed 'Quantum Leap', can maintain quantum coherence for over 10 milliseconds, a significant improvement over previous systems. This advancement brings practical quantum computing closer to reality, with potential applications in drug discovery, financial modeling, and cryptography. Industry experts believe commercial quantum computers could be available within the next decade.",
+        "reference": "MIT researchers announced a quantum computing breakthrough with a new processor called 'Quantum Leap' that maintains quantum coherence for over 10 milliseconds. This brings practical quantum computing closer, with applications in drug discovery, finance, and cryptography expected within a decade.",
+        "prompt": "Summarize the following text in 2-3 sentences:\n\nA breakthrough in quantum computing was announced yesterday by a team of researchers at MIT. The new quantum processor, dubbed 'Quantum Leap', can maintain quantum coherence for over 10 milliseconds, a significant improvement over previous systems. This advancement brings practical quantum computing closer to reality, with potential applications in drug discovery, financial modeling, and cryptography. Industry experts believe commercial quantum computers could be available within the next decade."
+      }
+    ]
+  },
+  "classification": {
+    "name": "Sentiment Classification",
+    "description": "Dataset for testing text classification",
+    "task_type": "classification",
+    "data": [
+      {
+        "text": "This product exceeded all my expectations! The quality is outstanding and the customer service was incredibly helpful.",
+        "expected": "positive",
+        "categories": ["positive", "negative", "neutral"]
+      },
+      {
+        "text": "I'm very disappointed with this purchase. The item arrived damaged and the return process was a nightmare.",
+        "expected": "negative",
+        "categories": ["positive", "negative", "neutral"]
+      },
+      {
+        "text": "The product works as described. Nothing special but it does the job.",
+        "expected": "neutral",
+        "categories": ["positive", "negative", "neutral"]
+      },
+      {
+        "text": "Absolutely love it! Best purchase I've made this year. Highly recommend to everyone.",
+        "expected": "positive",
+        "categories": ["positive", "negative", "neutral"]
+      },
+      {
+        "text": "Terrible experience. The product broke after one week and customer support was unresponsive.",
+        "expected": "negative",
+        "categories": ["positive", "negative", "neutral"]
+      }
+    ]
+  },
+  "question_answering": {
+    "name": "Reading Comprehension QA",
+    "description": "Dataset for testing question answering",
+    "task_type": "qa",
+    "data": [
+      {
+        "context": "The Python programming language was created by Guido van Rossum and first released in 1991. It emphasizes code readability with its notable use of significant whitespace. Python supports multiple programming paradigms, including structured, object-oriented, and functional programming.",
+        "question": "Who created Python?",
+        "expected": "Guido van Rossum"
+      },
+      {
+        "context": "Mount Everest, located in the Himalayas on the border between Nepal and Tibet, is the highest mountain on Earth at 8,848.86 meters above sea level. It was first climbed by Edmund Hillary and Tenzing Norgay in 1953.",
+        "question": "What is the height of Mount Everest?",
+        "expected": "8,848.86 meters"
+      },
+      {
+        "context": "The Great Wall of China is a series of fortifications built along the northern borders of China. Construction began in the 7th century BC and continued for centuries. The wall stretches over 21,000 kilometers.",
+        "question": "How long is the Great Wall of China?",
+        "expected": "21,000 kilometers"
+      }
+    ]
+  },
+  "code_generation": {
+    "name": "Python Code Generation",
+    "description": "Dataset for testing code generation",
+    "task_type": "code",
+    "data": [
+      {
+        "description": "calculates the factorial of a number",
+        "requirements": "- Use recursion\n- Handle edge case of 0\n- Return an integer",
+        "expected_contains": ["def", "factorial", "return"]
+      },
+      {
+        "description": "checks if a string is a palindrome",
+        "requirements": "- Case insensitive\n- Ignore spaces\n- Return boolean",
+        "expected_contains": ["def", "palindrome", "return"]
+      },
+      {
+        "description": "finds the maximum element in a list",
+        "requirements": "- Do not use built-in max function\n- Handle empty list case\n- Return the maximum value or None",
+        "expected_contains": ["def", "max", "return"]
+      }
+    ]
+  },
+  "reasoning": {
+    "name": "Logical Reasoning",
+    "description": "Dataset for testing reasoning capabilities",
+    "task_type": "reasoning",
+    "data": [
+      {
+        "problem": "If all roses are flowers and some flowers fade quickly, can we conclude that some roses fade quickly?",
+        "expected": "No, we cannot conclude that some roses fade quickly. While all roses are flowers, we only know that some flowers fade quickly. The roses might not be among the flowers that fade quickly."
+      },
+      {
+        "problem": "A farmer has 17 sheep. All but 9 die. How many sheep does the farmer have left?",
+        "expected": "9 sheep. The phrase 'all but 9' means 9 remain."
+      },
+      {
+        "problem": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+        "expected": "5 minutes. Each machine makes 1 widget in 5 minutes. So 100 machines would make 100 widgets in 5 minutes."
+      }
+    ]
+  },
+  "general": {
+    "name": "General Benchmark Prompts",
+    "description": "General prompts for speed and cost benchmarking",
+    "data": [
+      {
+        "prompt": "Explain the concept of machine learning in simple terms."
+      },
+      {
+        "prompt": "What are the main differences between Python and JavaScript?"
+      },
+      {
+        "prompt": "Describe the process of photosynthesis."
+      },
+      {
+        "prompt": "What are the key principles of object-oriented programming?"
+      },
+      {
+        "prompt": "Explain how a neural network works."
+      },
+      {
+        "prompt": "What is the difference between HTTP and HTTPS?"
+      },
+      {
+        "prompt": "Describe the water cycle in detail."
+      },
+      {
+        "prompt": "What are the benefits of cloud computing?"
+      },
+      {
+        "prompt": "Explain the concept of recursion with an example."
+      },
+      {
+        "prompt": "What is the difference between SQL and NoSQL databases?"
+      }
+    ]
+  }
+}
