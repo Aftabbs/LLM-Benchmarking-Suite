@@ -1,5 +1,8 @@
 # LLM Benchmarking Suite
 
+<img width="1172" height="626" alt="image" src="https://github.com/user-attachments/assets/f96517a0-792c-452a-b75c-9a74cfa65d4e" />
+
+
 A comprehensive benchmarking suite for comparing LLM models across multiple dimensions: quality, speed, cost, and task-specific performance. Built with LangChain, LangGraph, and Groq API.
 
 ## Features
@@ -127,6 +130,11 @@ python examples/run_benchmark.py --mode quick
 # Single model test
 python examples/run_benchmark.py --mode single
 ```
+
+<img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/c678414a-cda2-4632-9283-262d5fe7b439" />
+
+<img width="1895" height="832" alt="image" src="https://github.com/user-attachments/assets/7c7df369-c2c9-4cc1-adbd-5c149a4a1e2d" />
+
 
 ## Supported Models
 
