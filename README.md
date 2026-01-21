@@ -8,7 +8,7 @@ A comprehensive benchmarking suite for comparing LLM models across multiple dime
 ## Features    
  
 - **Multi-Model Support**: Groq-hosted models including Llama, Mixtral, Gemma, and more
-- **Quality Metrics**: BLEU, ROUGE, BERTScore for text quality evaluation
+- **Quality Metrics**: BLEU, ROUGE, BERTScore for text quality evaluation 
 - **Performance Metrics**: Latency (avg, p50, p95, p99), throughput, tokens per second
 - **Cost Analysis**: Cost per request, cost per 1K tokens, monthly projections
 - **Task-Specific Benchmarks**: Summarization, classification, Q&A, code generation, reasoning
